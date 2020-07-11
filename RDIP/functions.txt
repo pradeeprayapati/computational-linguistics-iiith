@@ -1,0 +1,19 @@
+
+Functionalities that are present:
+
+1.It contains a nav-bar through which we are able to reach the requested page.
+2.In the experiment we have a drop down menu in which we were asked to select a language among english and hindi.
+3.once we select the language we will get a set of buttons containing some text on them.
+4.we have to select the button which are arranged randomly to make them a perfect sentence.
+5.while we keep selecting a word they were keep on getting vanished from that area and will be added to the below specified space in the same order that we had selected.
+6.after all the words were selected or all the buttons were vanished from the first given area we will get two more buttons below saying "re-form the sentence" and "check the correctness of this sentence".
+7.if we click on the "re-form the sentence" button all the selected words were diselected and were placed in their previous state.
+8.if we click on the "check the correctness of this sentence" button we will get the result wheather the sentence we framed is correct or not.
+9.if it is wrong we get another button named  "Get correct sentence" which on clicking shows all the correct answers and another button named "Hide the correct sentence" which on clicking hides the displayed correct sentences.
+10.if the sentence is right then this button is hidden.
+ 
+Functionalities that are needed to be added:
+
+1.In the drop down menu the "select language" option can be made hidden when clicked on the menu.
+2.The button "get correct sentence" should be activate not only the sentence is wrong but also when it is right.which makes us to get the remaining correct sentences too.
+3.In the quizz section we have to provide checkboxes or radio buttons to make them answerable.
