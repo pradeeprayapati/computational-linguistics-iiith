@@ -82,7 +82,7 @@ padding-bottom: 10px
   font-size:15px;
     
     }
-#experiment p
+#res
 {
    font-size:16px;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
@@ -91,6 +91,46 @@ padding-bottom: 10px
      font-weight: bolder;
 
 }
+#res1
+{
+   font-size:16px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+     line-height: 0.1;
+     color:#00009C;
+     font-weight: bolder;
+
+}
+#res2
+{
+   font-size:16px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+     line-height: 0.1;
+     color:#00009C;
+     font-weight: bolder;
+     padding-bottom: 10px;
+
+}
+#res3
+{
+   font-size:16px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+     line-height: 0.1;
+     color:#00009C;
+     font-weight: bolder;
+     padding-bottom: 10px;
+
+}
+#res4
+{
+   font-size:16px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+     line-height: 0.1;
+     color:#00009C;
+     font-weight: bolder;
+     padding-bottom: 10px;
+
+}
+
 
 button {
   width: 90px;
@@ -100,6 +140,18 @@ button {
 
 
 }
+#res4
+{
+  font-size: 30px;
+  color :#484848;
+}
+ #b3
+{
+  width: 190px;
+  height: 30px;
+ font-size:15px;
+  margin: 10px;
+}	
 </style></head>
 
   <body><center>
@@ -117,12 +169,13 @@ button {
       <select onchange="dropdown()">
          <option value="none" selected>---Select Language---</option>
       <option value="English" id="eng" onchange="clear()">English</option>
-   <option value="Hindi" id="hin" onchange="clear()">Hindi</option></select><br><br>
+   <option value="Hindi" id="hin" onchange="clear">Hindi</option></select><br><br>
    <p id="res"></p>
    <p id="res1" style="color:blue; font-style: italic;font-weight:lighter;"></p>
    <p id="res2"></p>
    <p id="res3"></p>
-   
+    <p id="res4" ></p>
+   <button id="b3" style="visibility: hidden" >Re-form the sentence</button>
  
  </center>
   </section>
