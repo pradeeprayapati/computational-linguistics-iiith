@@ -47,15 +47,16 @@ if(document.getElementById("eng").selected)
 for(i=0;i<len;i++)
 {
 		 let button = document.createElement("button");
+  button.id='button'+i;
   button.innerHTML = arr1[i]
   body.appendChild(button);
    
   button.addEventListener ("click", function() {
 	document.getElementById("res3").innerHTML="Formed Sentence<span style='font-style:italic;color:blue;font-weight:lighter'>(after selecting words):</span>";
-    document.getElementById("res4").innerHTML+=this.innerHTML+"  ";
+    document.getElementById("res4").innerHTML+=this.innerHTML+" ";
     this.style.visibility="hidden";
     flag=flag+1;
-    if (flag==1) 
+    if (flag>0) 
      {
      	document.getElementById("b3").style.visibility="visible";
      }
@@ -71,7 +72,6 @@ for(i=0;i<len;i++)
 }
 else if (document.getElementById("hin").selected) 
 { 
-	document.getElementById("res2").innerHTML=""
 
 	document.getElementById("res").innerHTML="Form a sentence(Declarative or Interrogative or any other type) from the given words"
 	document.getElementById("res1").innerHTML="(select the buttons in proper order)";
@@ -90,6 +90,7 @@ else if (document.getElementById("hin").selected)
 for(i=0;i<len1;i++)
 {
 		 let button = document.createElement("button");
+  button.id='button'+i
   button.innerHTML = arr2[i]
   body.appendChild(button)
   
@@ -98,7 +99,7 @@ for(i=0;i<len1;i++)
     document.getElementById("res4").innerHTML+=this.innerHTML+"  ";
     this.style.visibility="hidden";
     flag=flag+1;
-    if (flag==1) 
+    if (flag>0) 
      {
      	document.getElementById("b3").style.visibility="visible";
      }
@@ -117,5 +118,21 @@ else
 	document.getElementById("res").innerHTML=""
 	document.getElementById("res1").innerHTML=""
 	document.getElementById("res2").innerHTML=""
+}
+}
+
+function reform()
+
+{
+
+	for(i=0;i<arr1.length||i<arr2.length;i++)
+	{
+	  if(document.getElementById('button'+i).style.visibility=="hidden")
+
+	  	document.getElementById('button'+i).style.visibility="visible";
+	  document.getElementById('res3').innerHTML=""
+	  document.getElementById('res4').innerHTML=""
+	  document.getElementById('b3').style.visibility="hidden"
+
 }
 }
