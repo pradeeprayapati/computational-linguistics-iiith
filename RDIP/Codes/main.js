@@ -31,6 +31,7 @@ function dropdown()
 	document.getElementById("res5").innerHTML=""
 	document.getElementById("b3").style.visibility="hidden";
     document.getElementById('b4').style.visibility="hidden"
+	document.getElementById("b5").style.visibility="hidden";
 	flag=0
 if(document.getElementById("eng").selected)
 {
@@ -146,6 +147,7 @@ function reform()
 	  document.getElementById("res5").innerHTML=""
 	  document.getElementById('b3').style.visibility="hidden"
       document.getElementById('b4').style.visibility="hidden"   
+      document.getElementById("b5").style.visibility="hidden";
 }
 }
 }
@@ -175,6 +177,7 @@ if(c2==1)
 else
 {      
     document.getElementById("res5").innerHTML="<span style='color:red;font-size:30px'>Wrong answer!!!</span>"
+    document.getElementById("b5").style.visibility="visible";
 }
 }else if(document.getElementById("eng").selected)
   {
@@ -195,6 +198,7 @@ if(c1==1)
 else
 {
       document.getElementById("res5").innerHTML="<span style='color:red;font-size:30px'>Wrong answer!!!</span>"
+      document.getElementById("b5").style.visibility="visible";
 }
 }
 }
