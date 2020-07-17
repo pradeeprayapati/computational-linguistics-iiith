@@ -15,39 +15,19 @@
     max-width:1030px;
     max-height:1000px;
     margin:auto;
-
-
     background-color: #1D3559;
   }
-
-.h2
-{
-
-  font-size: 60px;
-  font-family: serif;
-  background-color: 
-#CCEEEE;
-
-  height: 1000px;
-  text-align: left;
-  padding-left:5px;
-
-
-}
-.h2 p
-{
-  padding-left:25px;
-  padding-top:2px;
-}
 
 .navbar2 ul 
 {
   list-style: none;
 }
+
 .navbar2 li
 {
   display: inline;
 }
+
 .navbar2 a
 {
 padding:14px 16px;
@@ -55,6 +35,7 @@ font-size: 15px;
 color: #00688B   ;
 text-decoration: underline;
 }
+
 .navbar2 a:hover
 {
 
@@ -62,26 +43,45 @@ color:white;
  background: #104E8B   ;
  text-decoration: underline;
 }
+
 .navbar2
 {
     background-color: white;
-    height:900px;
+    height:1200px;
     font-family: sans-serif;
     margin:30px;
     box-shadow: 0px 20px 25px 5px   lightslategray;
 
 }
+
+.h2
+{
+  font-size: 60px;
+  font-family: serif;
+  background-color:#CCEEEE;
+  height: 1000px;
+  text-align: left;
+  padding-left:5px;
+}
+
+.h2 p
+{
+  padding-left:25px;
+  padding-top:2px;
+}
+
 #experiment h4
 {
 padding-left:60px;
 padding-top: 44px;
 padding-bottom: 10px
 }
+
 #experiment select
 {
-  font-size:15px;
-    
-    }
+  font-size:15px;  
+}
+
 #res
 {
    font-size:16px;
@@ -89,8 +89,8 @@ padding-bottom: 10px
      line-height: 0.1;
      color:#00009C;
      font-weight: bolder;
-
 }
+
 #res1
 {
    font-size:16px;
@@ -98,8 +98,8 @@ padding-bottom: 10px
      line-height: 0.1;
      color:#00009C;
      font-weight: bolder;
-
 }
+
 #res2
 {
    font-size:16px;
@@ -108,8 +108,8 @@ padding-bottom: 10px
      color:#00009C;
      font-weight: bolder;
      padding-bottom: 10px;
-
 }
+
 #res3
 {
    font-size:16px;
@@ -118,8 +118,8 @@ padding-bottom: 10px
      color:#00009C;
      font-weight: bolder;
      padding-bottom: 10px;
-
 }
+
 #res4
 {
    font-size:16px;
@@ -128,30 +128,35 @@ padding-bottom: 10px
      color:#00009C;
      font-weight: bolder;
      padding-bottom: 10px;
-
 }
-
 
 button {
   width: 90px;
   height: 30px;
-
   margin: 2px;
-
-
 }
+
 #res4
 {
   font-size: 30px;
   color :#484848;
 }
- #b3
+
+#res6
+{
+  font-size:20px;
+  color :black;
+  line-height: 1.6;
+}
+ 
+#b3
 {
   width: 190px;
   height: 30px;
  font-size:15px;
   margin: 10px;
 }
+
 #b4
 {
   width: 300px;
@@ -159,7 +164,8 @@ button {
  font-size:15px;
   margin: 10px;
 }	
- #b5
+
+#b5
 {
   width: 200px;
   height: 30px;
@@ -192,7 +198,8 @@ button {
    <button id="b3" style="visibility: hidden" onclick="reform()" >Re-form the sentence</button></br>
    <button id="b4" style="visibility: hidden" onclick="check()">Check the correctness of this sentence</button>
    <p id="res5"></p>
-   <button id="b5" style="visibility: hidden" >Get Correct Sentence</button>
+   <button id="b5" style="visibility: hidden" onclick="getans()">Get Correct Sentence</button><br>
+   <p id="res6"></p>
  </center>
   </section>
   
