@@ -152,66 +152,49 @@ function reform()
 
  function check()
 {
-
   var x=String(document.getElementById("res4").innerHTML).replace(/\s+$/, '');
   c1=0;
   c2=0
-  if(document.getElementById("eng").selected)
-  {
-  for(i=0;i<10;i++)
-  {
-    for(j=0;j<emain[i].length;j++)
-    {
-
-      if(x==emain[i][j])
-      {
-
-        c1++;
-
-      }
-    }
-  }
-
-if(c1==1)
-{
-      document.getElementById("res5").innerHTML="<span style='color:green;font-size:30px'>Right answer!!!</span>"
-
-}
-else
-{
-      document.getElementById("res5").innerHTML="<span style='color:red;font-size:30px'>Wrong answer!!!</span>"
-
-}
-
-}
-
- else if(document.getElementById("hin").selected)
+   if(document.getElementById("hin").selected)
   {
   for(i=0;i<7;i++)
   {
     for(j=0;j<hmain[i].length;j++)
     {
-
       if(x==hmain[i][j])
       {
-
         c2++;
-
       }
     }
   }
-
-
 if(c2==1)
 {
       document.getElementById("res5").innerHTML="<span style='color:green;font-size:30px'>Right answer!!!</span>"
-
+}
+ 
+else
+{      
+    document.getElementById("res5").innerHTML="<span style='color:red;font-size:30px'>Wrong answer!!!</span>"
+}
+}else if(document.getElementById("eng").selected)
+  {
+  for(i=0;i<10;i++)
+  {
+    for(j=0;j<emain[i].length;j++)
+    {
+      if(x==emain[i][j])
+      {
+        c1++;
+      }
+    }
+  }
+if(c1==1)
+{
+	document.getElementById("res5").innerHTML="<span style='color:green;font-size:30px'>Right answer!!!</span>"
 }
 else
 {
       document.getElementById("res5").innerHTML="<span style='color:red;font-size:30px'>Wrong answer!!!</span>"
-
 }
-
 }
 }
